@@ -23,7 +23,7 @@
                <input type="checkbox" class="layui-input" name="menu[{$vo.mid}]" lay-skin="primary" title="{$vo.title}" {:isset($role['rights']) && $role['rights'] && in_array($vo.mid,$role['rights'])?'checked':''}>
                <hr>
                {volist name="vo.children" id="cvo"}
-               <input type="checkbox" name="menu[{$cvo.mid}]" lay-skin="primary" title="{$vo.title}" {:isset($role['rights']) && $role['rights'] && in_array($cvo.mid,$role['rights'])?'checked':''}>
+               <input type="checkbox" name="menu[{$cvo.mid}]" lay-skin="primary" title="{$cvo.title}" {:isset($role['rights']) && $role['rights'] && in_array($cvo.mid,$role['rights'])?'checked':''}>
                {/volist}
             </div>
             {/volist}
