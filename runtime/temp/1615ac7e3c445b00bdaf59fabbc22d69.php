@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:74:"D:\wamp\wamp64\www\video\public/../application/admins\view\home\index.html";i:1524746660;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:74:"D:\wamp\wamp64\www\video\public/../application/admins\view\home\index.html";i:1525346591;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +35,16 @@
      				</div>
      			<div class="layui-colla-item">
      				<h2 class="layui-colla-title">權限管理</h2>
-     				<div class="layui-colla-content">內容區域</div>
+     				<div class="layui-colla-content">
+                        <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                            <li class="layui-nav-item"><a href="javascript:;" onclick="menuFire(this)" src="../Menu/index">菜单管理</a></li>
+                        </ul>
+                    </div>
+                    <div class="layui-colla-content">
+                        <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                            <li class="layui-nav-item"><a href="javascript:;" onclick="menuFire(this)" src="../Roles/index">角色管理</a></li>
+                        </ul>
+                    </div>
      			</div>
      			<div class="layui-colla-item">
      				<h2 class="layui-colla-title">系統設置</h2>
